@@ -1,0 +1,9 @@
+#FPSDiv{
+  position:fixed;
+  top:0px;
+  right:300px;
+  z-index: 99999;
+}
+#FPSCanvas{
+  border:1px pink solid;
+}

@@ -1,0 +1,319 @@
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
+	color: #330;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+}
+h1, h2, h3 {
+	font-size: 18px;
+}
+h4, h5, h6 {
+	font-size: 16px;
+}
+p {
+	margin: 0 0 0 0;
+}
+a, a:link, a:active, a:visited, a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+.rtmenu {
+  /*
+  background: white no-repeat center center;
+  background-image: url('icons/menu.png');
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+*/
+}
+
+.amenu {
+  background: white no-repeat center center;
+  background-image: url('icons/All_menu-04.png');
+  background-size: 32px 32px;
+  border: solid 1px gray;
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.bmenu {
+  background: white no-repeat center center;
+  background-image: url('icons/search-04.png');
+  background-size: 32px 32px;
+  border: solid 1px gray;
+  display: block;    
+  width: 60px; 
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.backmenu {
+  background: white no-repeat center center;
+  background-image: url('icons/Back-02.png');
+  background-size: 32px 32px;
+  border: solid 1px gray;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.headerTitle {
+  /*position: absolute;*/
+  line-height: 60px;
+  font-size: 30px;
+  top: 15px;
+}
+
+.searchArea {
+  background: deepskyblue;
+  color: black;
+  height: 60px;
+  line-height: 60px;
+  /*position: absolute;*/
+}
+#resultArea {
+  background: white;
+  color: black;
+  font-size: 12px;
+}
+.rows {
+  position: relative;
+  border:solid 1px gray;
+  height: 100px;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;                  
+  -ms-user-select: none;
+  user-select: none;
+}
+.menurows {
+  width: 220px;
+  height: 30px;
+  border:solid 5px white;
+  vertical-align: middle;
+  background: orange;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;                  
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+#goedit {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  line-height: 20px; 
+  border:solid 1px white;
+  color: white;
+  font-size: 10px;
+  display: none;
+  height: 20px;
+  cursor: pointer;
+  /*
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  */
+}
+.aamenu {
+  background-image: url('icons/close.png');
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+  cursor: pointer;
+}
+.bbmenu {
+  background-image: url('icons/close.png');
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 200px;
+  top: 14px;
+  cursor: pointer;
+}
+
+
+.deletebutton {
+  height: 20px;
+  width: 50px;
+  background: blue;
+  position: relative;
+  cursor: pointer;  
+}
+.searchTxt {
+  border:solid 0px ;
+  color: black;
+  background: white;
+  border-radius: 5px;
+  padding: 0;
+  outline: none;
+  line-height: 38px;
+  height: 38px;
+  /*box-shadow:0 0 0px purple;*/
+}
+.titlefield {
+  width: 100%;
+  position: absolute;
+  color: white;
+  opacity: 1;
+  font-size: 25px;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+.contentfield1 {
+  /*background: white;*/
+  width: 100%;
+  text-align: left;
+  /*position: absolute;*/
+  /*border:solid 2px blue;*/
+  color: black;
+  font-size: 16px;
+  /*opacity: 1;*/
+  /*bottom: 20px;*/
+  pointer-events: none;
+}
+.contentfield2 {
+  /*background: white;*/
+  width: 50%;
+  height: 80%;
+  left: 55%;
+  text-align: left;
+  position: absolute;
+  /*border:solid 2px blue;*/
+  color: black;    
+  font-size: 16px; 
+  /*opacity: 1;*/  
+  /*bottom: 20px;*/
+  pointer-events: none;
+}
+
+
+.itemtitle1 {
+  /*border:solid 2px blue;*/
+  font-size: 20px;
+  font-weight: bold;
+  width: 99%;
+  text-align: left;
+  color: black;
+  /*position: absolute;*/
+  /*position: relative;*/
+  bottom: 0px;
+  left: 20px;
+  pointer-events: none;
+}
+.itemtitle2 {
+  /*border:solid 2px blue;*/
+  font-size: 20px;  
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  color: black;
+  /*position: absolute;*/
+  /*position: relative;*/
+  /*bottom: 40px; */
+  /*left: 20px;*/
+  pointer-events: none;
+}
+
+
+.itemg1 {
+  width: 100%;
+  height: 85%;
+  /*border:solid 2px blue;*/
+  background: linear-gradient(toprgba(255,255,255,1),rgba(255,255,255,0)) center bottom no-repeat;
+  background: -webkit-linear-gradient(top,rgba(255,255,255,1),rgba(255,255,255,0)) center bottom no-repeat;
+  background: -moz-linear-gradient(top,rgba(255,255,255,1),rgba(255,255,255,0)) center bottom no-repeat;
+  background-position: left top;
+  pointer-events: none;
+
+  /*position: relative;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+}
+.itemg1:hover {
+  /*border:solid 2px red;*/
+}
+
+.itemg2 {
+  position: absolute;
+  top: 20%;
+  width: 50%;
+  height: 80%;
+  background-position: left top;
+  pointer-events: none;
+  /*border:solid 2px blue;*/
+}
+
+.itemg2:hover {
+  /*border:solid 2px red;*/
+}
+
+
+.ihead {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 50px;
+  height: 50px;
+}
+.ititle {
+  position: absolute;
+  height: 80px;
+  width: 70%;
+  left: 40px;
+  /*top: 20%;*/
+}
+.iaddit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -20px;
+  top: 30%;
+}
+#content, .content{
+	padding: 0;
+}
+
+footer {
+  /*position: absolute;*/
+  border: solid 1px gray;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+header {
+  /*position: absolute;
+  top: 0;*/
+  border: solid 1px gray;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}

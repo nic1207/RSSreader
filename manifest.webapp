@@ -1,0 +1,21 @@
+﻿{
+    "version": "1.01",
+    "name": "RSS Reader",
+    "launch_path": "/rssreader/index.html",
+    "description": "HTML5 RSSReader",
+    "type": "web",
+    "icons": {
+        "128": "/rssreader/images/icons/logo128.png"
+    },
+    "developer": {
+        "name": "foxc811@gmail.com"
+    },
+    "permissions": {
+        "systemXHR": {
+          "description": "support ajax feature"
+        },
+    	"storage": {
+          "description": "support storage feature"
+        }
+    }
+}

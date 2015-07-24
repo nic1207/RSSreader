@@ -1,0 +1,125 @@
+* {
+  /*
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  */
+}
+
+.masonry {
+  /*background: orange;*/
+  /*max-width: 100%;*/
+  height: 100%;
+  max-width: 100%;
+}
+
+.masonry-80 {
+  width: 100%;
+  /*text-align: center;*/
+}
+
+.simg {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  /*border:solid 2px blue;*/
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  
+  background:-webkit-linear-gradient(top, #00475E, #007276);
+  background:-webkit-linear-gradient(top, rgba(1,1,1,1),rgba(0,0,0,1));
+  background:-moz-linear-gradient(top, rgba(1,0,0,1),rgba(0,0,0,1));
+  background:-o-linear-gradient(top, rgba(1,0,0,1),rgba(0,0,0,1));
+  pointer-events: none;
+  cursor: pointer;
+  
+  /*
+  background:linear-gradient(top,#FFFFFF,#000000);
+  background:-moz-linear-gradient(top,#FFFFFF,#000000);
+  background:-webkit-linear-gradient(top,#FFFF00,#FFFFFF);
+  */
+}
+
+.simg:hover {   
+  /*border:solid 2px red;*/
+}
+
+
+/* clearfix */
+.masonry,.masonry-80:after {
+  content: '';
+  display: block;
+  max-width: 100%;
+  clear: both;
+}
+
+.masonry .item,.masonry-80 .item{
+  position: relative;
+  width:  100%;
+  height: 100%;
+  color: black;
+  float: left;
+}
+
+.item.Cover {
+  background: white;
+  /*width: 100%;*/
+  width: 450px;
+  /*height: 100%;*/
+  height: 500px;
+  background-size:100% 100%;
+}
+.item.None {
+  width:  50%;
+  height: 25%;
+}
+.item.List {
+  width: 23%;
+  height: 30%;
+  padding: 5px;
+}
+.item.titleList {
+  padding: 10px;
+  width: 55%;
+  height: 95%;
+  background-size: contain;
+  border-right: solid 1px gray;
+  border-left: solid 1px gray;
+  /*border-top: solid 1px gray;*/
+}
+.item.titleList2 {
+  width: 42%;
+  height: 45%;
+  padding: 10px;
+  /*border-top: solid 1px gray;*/
+}     
+
+.item.w4 { width:  240px; }
+.item.h2 { height: 100px; }
+.item.h3 { height: 130px; }
+.item.h4 { height: 180px; }
+
+.item.gigante {
+  width: 180px;
+  height: 180px;
+}
+.item {
+  width: 100%;
+	height: 100%;
+}
+
+.labelfield {
+  width: 100%;
+  position: absolute;
+  color: black;
+  /*background: white;
+  opacity: 0.4;*/
+  font-size: 28px;
+  left: 0;
+  top: 0;
+}
+.datefield {
+  color:gray;
+  font-size: 90%;
+}

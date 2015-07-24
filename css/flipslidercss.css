@@ -1,0 +1,151 @@
+.pagecontain {
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+	overflow: hidden;
+  background: gray;
+  /*position: absolute;*/
+}
+
+.xpages {
+  background: gray;
+	float: left;
+	display:inline;
+				
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-out;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+  text-align: center;
+  overflow: auto; 
+	/*position: absolute;*/
+	/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+	-webkit-transform: translate3d(0px,0px,0px); 
+}
+
+.pageflip {
+  height: 100%;
+  width: 100%;
+}
+
+
+.pagefold img {
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.pagefold {
+  height: 100%;
+  width: 100%;
+}
+/*
+.ppage img {
+  float: left;
+  margin: auto;
+}
+*/
+
+.ppage {
+  /*position: absolute;*/
+  position: relative;
+  background: white;
+  padding: 0;
+  margin: 0;
+  float: left;
+  height: 100%;
+  width: 100%;
+  /*float: left;*/
+  /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+  -webkit-transform: translate3d(0px,0px,0px); 
+
+}
+.f-cover-flip {
+  width: 133px;
+  height: 133px;
+  position: absolute;
+  right: 0px;
+  padding: 5px 30px 5px 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  top: 60%;
+  margin-top: -25px;
+  background-image: url('icons/BLUE_FLIP.gif');
+  background-size: 100% 100%;  
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.f-cover-story {
+  /*line-height: 46px;*/
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+  font-size: 20px;
+  /*line-height: 26px;*/
+  color: orange;
+  /*background: black;*/
+  width: 100%;
+}
+.f-cover-story-title {
+  color: white;
+  font-size: 28px;
+  width: 100%;
+}
+.f-cover-from {
+  color: orange;
+  font-size: 20px;
+  width: 100%;
+}
+.flipdetail {
+  background-color: white;
+  position: absolute;  
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.box{
+  border-top: 1px solid #f2f2f2;
+  float: left;
+  padding: 0;  
+  overflow: hidden;
+  position: relative;
+  background: white;
+  color: black;
+  font-size: 20px;
+} 
+
+.box-expanded .box-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px; 
+  height: 60px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;  
+  line-height: 60px;
+  background-image: url('icons/Back-02.png');
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.box-expanded {
+  border: none;
+  padding: 50px;   
+}
+.box.box-expanded:after {
+  background: transparent;
+}
